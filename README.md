@@ -327,7 +327,7 @@ GET  /api/messages/:conversationId → Get chat history
 
 ## 👤 Author
 
-Your Name — [GitHub](https://github.com/yourusername)
+Priya G — [GitHub](https://github.com/priyagowda11)
 
 ---
 
