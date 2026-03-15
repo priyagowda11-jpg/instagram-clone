@@ -61,48 +61,6 @@ instagram-clone/
 
 ---
 
-## 🚀 Step-by-Step Setup
-
-### STEP 1 — Extract ZIP
-
-1. Right-click your downloaded ZIP file
-2. Click **"Extract All"**
-3. Choose a location (e.g., Desktop)
-4. Open the extracted folder
-
----
-
-### STEP 2 — Open Terminal in VS Code
-
-1. Open **VS Code**
-2. Click `File → Open Folder` → select your project folder
-3. Press `` Ctrl + ` `` to open the terminal
-
----
-
-### STEP 3 — Setup Backend
-
-```bash
-# Go into server folder
-cd server
-
-# Install all backend packages
-npm install
-```
-
-Create your `.env` file inside `/server`:
-
-```env
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key_anything_random
-CLOUDINARY_CLOUD_NAME=your_cloudinary_name
-CLOUDINARY_API_KEY=your_cloudinary_key
-CLOUDINARY_API_SECRET=your_cloudinary_secret
-```
-
-> 🔴 Where to get these values — see `.env` Configuration section below
-
 Start the backend:
 
 ```bash
@@ -112,8 +70,6 @@ npm run dev
 ✅ You should see: `Server running on port 5000` + `MongoDB connected`
 
 ---
-
-### STEP 4 — Setup Mobile App
 
 Open a **new terminal tab** (click `+` in VS Code terminal):
 
@@ -144,8 +100,6 @@ npx expo start
 
 ---
 
-### STEP 5 — Run on Android Phone
-
 1. Make sure your phone and PC are on the **same WiFi**
 2. Open **Expo Go** app on your phone
 3. Tap **"Scan QR Code"**
@@ -174,7 +128,7 @@ npx expo start
 
 ### JWT Secret
 
-- Just type any random string, e.g.: `JWT_SECRET=mysupersecret123abc`
+- Just type any random string, e.g.: `JWT_SECRET=mysupersecret123abc`(strong)
 
 ---
 
@@ -207,7 +161,7 @@ git branch -M main
 git push -u origin main
 ```
 
-✅ Your code is now on GitHub!
+✅ my code is now on GitHub!
 
 ---
 
