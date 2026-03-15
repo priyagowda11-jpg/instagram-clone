@@ -1,0 +1,19 @@
+workflows:
+  android-workflow:
+    name: Android Build
+    max_build_duration: 60
+    environment:
+      node: 18.18.0
+    scripts:
+      - name: Install dependencies
+        script: |
+          cd mobile-app
+          npm install
+      - name: Build Android APK
+        script: |
+          cd mobile-app
+          npx expo prebuild --platform android --clean
+          cd android
+          ./gradlew assembleRelease
+    artifacts:
+      - mobile-app/android/app/build/outputs/apk/release/*.apk
